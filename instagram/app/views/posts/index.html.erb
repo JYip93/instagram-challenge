@@ -1,0 +1,12 @@
+<h1>Johnnygram</h1>
+
+<%= link_to "Create post", new_post_path%>
+
+<div class="posts">
+    <% @posts.each do |post|%>
+        <section class="post">
+        <%=image_tag(post.image)%>
+        <%=post.caption%>
+        </section>
+    <%end%>
+</div>
