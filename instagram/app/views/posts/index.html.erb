@@ -5,6 +5,7 @@
 <div class="posts">
     <% @posts.each do |post|%>
         <section class="post">
+        <div><%=post.user.user_name%></div>
         <%=image_tag(post.image)%>
         <%=post.caption%>
         </section>
